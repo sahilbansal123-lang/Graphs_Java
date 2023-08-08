@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Implementation {
 
-    public static class Edge {
+    static class Edge {
         int src;
         int dest;
         int weight;
