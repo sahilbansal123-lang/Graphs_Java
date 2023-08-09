@@ -47,5 +47,8 @@ public class DFS {
 
     public static void main(String[] args) {
 
+        int v = 7; // No of vertices
+        ArrayList<Edge>[] graph = new ArrayList[v];
+        createGraph(graph);
     }
 }
