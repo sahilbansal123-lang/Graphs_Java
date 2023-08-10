@@ -45,6 +45,11 @@ public class HasPath {
 
     }
 
+    public static boolean hasPath(ArrayList<Edge> graph[]) {
+
+
+        return false;
+    }
     public static void main(String[] args) {
 
     }
