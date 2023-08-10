@@ -45,10 +45,24 @@ public class DFS {
 
     }
 
+    public static void dfs(ArrayList<Edge>[] graph, int curr, boolean vis[]) {
+        // Visited
+        System.out.print(curr + " ");
+        vis[curr] = true;
+
+        for (int i = 0; i < graph[curr].size(); i++) {
+            Edge e = graph[curr].get(i);
+            if (!vis[e.dest]) {
+                dfs(graph, e.dest, vis);
+            }
+        }
+    }
+
     public static void main(String[] args) {
 
         int v = 7; // No of vertices
         ArrayList<Edge>[] graph = new ArrayList[v];
         createGraph(graph);
+        dfs(graph, 0, new boolean[v]);
     }
 }
