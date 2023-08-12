@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a08c885-2627-4c06-9239-53defff80a27" name="Changes" comment="graph">
-      <change beforePath="$PROJECT_DIR$/src/ConnectedComponentsBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConnectedComponentsBFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConnectedComponentsDfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConnectedComponentsDfs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,7 +291,21 @@
       <option name="project" value="LOCAL" />
       <updated>1691819348704</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="graph">
+      <created>1691819535004</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1691819535004</updated>
+    </task>
+    <task id="LOCAL-00037" summary="graph">
+      <created>1691819675652</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1691819675652</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
