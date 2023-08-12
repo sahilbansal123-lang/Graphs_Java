@@ -13,6 +13,13 @@ public class ConnectedComponentsDfs {
         }
     }
 
+    public static void dfs(ArrayList<Edge>[] graph) {
+        boolean isVis[] = new boolean[graph.length];
+            for (int i = 0; i < graph.length; i++) {
+                dfsUtil(graph, i, isVis);
+            }
+        }
+
     public static void dfsUtil(ArrayList<Edge>[] graph, int curr, boolean isVis[]) {
         System.out.print(curr + " ");
         isVis[curr] = true;
