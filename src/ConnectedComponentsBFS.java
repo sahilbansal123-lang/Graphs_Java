@@ -14,9 +14,17 @@ public class ConnectedComponentsBFS {
         }
     }
 
-    public static void bfsUtil(ArrayList<Edge> []graph) {
-        Queue<Integer> q = new LinkedList<>();
+    public static void bfs(ArrayList<Edge> []graph) {
         boolean[] isVis = new boolean[graph.length];
+        for (int i = 0; i < graph.length; i++) {
+            if (!isVis[i]) {
+                bfsUtil(graph, isVis);
+            }
+        }
+    }
+
+    public static void bfsUtil(ArrayList<Edge> []graph, boolean[] isVis) {
+        Queue<Integer> q = new LinkedList<>();
         q.add(0);
         while (!q.isEmpty()) {
             int curr = q.remove();
