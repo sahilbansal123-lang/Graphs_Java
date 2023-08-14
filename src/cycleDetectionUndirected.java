@@ -34,6 +34,22 @@ public class cycleDetectionUndirected {
         graph[4].add(new Edge(4, 3));
 
     }
+    
+    public static boolean detectCycle(ArrayList<Edge>[] graph) {
+        boolean isVis[] = new boolean[graph.length];
+        for (int i = 0; i < graph.length; i++) {
+            if (!isVis[i]) {
+                if (detectCycleUtil(graph, isVis, i, -1)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public static boolean detectCycleUtil(ArrayList<Edge>[] graph, boolean[] isVis, int curr, int parent) {
+
+    }
 
     public static void main(String[] args) {
 
