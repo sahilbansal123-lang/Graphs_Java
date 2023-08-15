@@ -38,7 +38,7 @@ public class BipartiteGraph {
     }
 
     public static boolean isBipartite(ArrayList<Edge>[] graph) {
-        int color[] = new int[graph.length];
+        int[] color = new int[graph.length];
         // -1 == no color
         //  0 == yellow color
         //  1 == blue color
