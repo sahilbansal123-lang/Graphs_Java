@@ -14,6 +14,10 @@ public class BipartiteGraph {
 
     public static void createGraph(ArrayList<Edge>[] graph) {
 
+        for (int i = 0; i < graph.length; i++) {
+            graph[i] = new ArrayList<>();
+        }
+
         graph[0].add(new Edge(0, 1));
         graph[0].add(new Edge(0, 2));
 
@@ -28,7 +32,6 @@ public class BipartiteGraph {
 
         graph[4].add(new Edge(4, 2));
         graph[4].add(new Edge(4, 3));
-
 
     }
 
