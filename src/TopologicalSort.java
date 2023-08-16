@@ -25,17 +25,37 @@ public class TopologicalSort {
         graph[5].add(new Edge(5, 2));
 
     }
+    public static void topologicalSort(ArrayList<Edge>[] graph) {
+        boolean isvis[] = new boolean[graph.length];
+        Stack<Integer> s = new Stack<>();
 
-    public static void topologicalSort (ArrayList<Edge>[] graph, int curr, boolean isvis[], Stack<Integer> s) {
+        for (int i = 0; i < graph.length; i++) {
+            if (!isvis[i]) {
+                topologicalSortUtil(graph, i, isvis, s);
+            }
+        }
+        while (!s.isEmpty()) {
+            System.out.print(s.pop() + " ");
+        }
+    }
 
+    public static void topologicalSortUtil(ArrayList<Edge>[] graph, int curr, boolean isvis[], Stack<Integer> s) {
+        isvis[curr] = true;
+        for (int i = 0; i < graph[curr].size(); i++) {
+            Edge e = graph[curr].get(i);
+            if (!isvis[e.dest]) {
+                topologicalSortUtil(graph, e.dest, isvis, s);
+            }
+        }
+        s.push(curr);
     }
 
     public static void main(String[] args) {
-        int v = 7; // No of vertices
+        int v = 6; // No of vertices
         ArrayList<Edge>[] graph = new ArrayList[v];
         for (int i = 0; i < graph.length; i++) {
             createGraph(graph);
         }
-
+        topologicalSort(graph);
     }
 }

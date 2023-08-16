@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a08c885-2627-4c06-9239-53defff80a27" name="Changes" comment="graph" />
+    <list default="true" id="2a08c885-2627-4c06-9239-53defff80a27" name="Changes" comment="graph">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TopologicalSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TopologicalSort.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,27 +46,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1691427434446</updated>
-    </task>
-    <task id="LOCAL-00016" summary="graph">
-      <created>1691598645688</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1691598645688</updated>
-    </task>
-    <task id="LOCAL-00017" summary="graph">
-      <created>1691598665198</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1691598665198</updated>
-    </task>
-    <task id="LOCAL-00018" summary="graph">
-      <created>1691598684944</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1691598684944</updated>
     </task>
     <task id="LOCAL-00019" summary="graph">
       <created>1691598701568</created>
@@ -387,7 +369,28 @@
       <option name="project" value="LOCAL" />
       <updated>1692163073255</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="graph">
+      <created>1692163461044</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1692163461044</updated>
+    </task>
+    <task id="LOCAL-00066" summary="graph">
+      <created>1692164916654</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1692164916654</updated>
+    </task>
+    <task id="LOCAL-00067" summary="graph">
+      <created>1692165284183</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1692165284183</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
