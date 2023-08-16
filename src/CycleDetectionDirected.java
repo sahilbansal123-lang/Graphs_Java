@@ -40,7 +40,20 @@ public class CycleDetectionDirected {
     }
 
     public static boolean containsCycleUtil(ArrayList<Edge>[] graph, int curr, boolean[] isVis, boolean[] stack) {
+        isVis[curr] = true;
+        stack[curr] = true;
 
+        for (int i = 0; i < graph[curr].size(); i++) {
+            Edge e = graph[curr].get(i);
+            if (stack[e.dest]) {
+                return true;
+            }
+            if (!isVis[e.dest] && containsCycleUtil(graph, e.dest, isVis, stack)) {
+                return true;
+            }
+        }
+        stack[curr] = false;
+        return false;
     }
 
     public static void main(String[] args) {
