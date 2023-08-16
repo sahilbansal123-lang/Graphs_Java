@@ -26,7 +26,7 @@ public class CycleDetectionDirected {
     }
 
     public static boolean containsCycle(ArrayList<Edge>[] graph) {
-        boolean isVis[] = new boolean[graph.length]
+        boolean isVis[] = new boolean[graph.length];
         boolean stack[] = new boolean[graph.length];
 
         for (int i = 0; i < graph.length; i++) {
@@ -39,7 +39,7 @@ public class CycleDetectionDirected {
         return false;
     }
 
-    public static boolean containsCycleUtil(ArrayList<Edge>[] graph, int i, boolean[] isVis, boolean[] stack) {
+    public static boolean containsCycleUtil(ArrayList<Edge>[] graph, int curr, boolean[] isVis, boolean[] stack) {
 
     }
 
