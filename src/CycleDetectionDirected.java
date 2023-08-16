@@ -31,9 +31,12 @@ public class CycleDetectionDirected {
 
         for (int i = 0; i < graph.length; i++) {
             if (!isVis[i]) {
-                containsCycleUtil(graph, i, isVis, stack);
+                if (containsCycleUtil(graph, i, isVis, stack)){
+                    return true;
+                }
             }
         }
+        return false;
     }
 
     public static boolean containsCycleUtil(ArrayList<Edge>[] graph, int i, boolean[] isVis, boolean[] stack) {
