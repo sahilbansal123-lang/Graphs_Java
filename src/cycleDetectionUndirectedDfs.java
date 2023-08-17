@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class cycleDetectionUndirected {
+public class cycleDetectionUndirectedDfs {
 
     public static class Edge{
         int src;
