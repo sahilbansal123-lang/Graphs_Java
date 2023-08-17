@@ -26,8 +26,16 @@ public class CalculateAllPossiblePath {
 
     }
 
-    public static void possibleDist(ArrayList<Edge>[] graph) {
+    public static void possiblePaths(ArrayList<Edge>[] graph, int src, int dest, String paths) {
+        if (src == dest) {
+            System.out.println(paths + dest + " ");
+            return;
+        }
 
+        for (int i = 0; i < graph[src].size(); i++) {
+            Edge e = graph[src].get(i);
+            possiblePaths(graph, e.dest, dest, paths + src);
+        }
     }
 
     public static void main(String[] args) {
@@ -36,5 +44,6 @@ public class CalculateAllPossiblePath {
         for (int i = 0; i < graph.length; i++) {
             createGraph(graph);
         }
+        possiblePaths(graph, 5, 1, " ");
     }
 }
