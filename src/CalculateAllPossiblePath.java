@@ -26,8 +26,15 @@ public class CalculateAllPossiblePath {
 
     }
 
+    public static void possibleDist(ArrayList<Edge>[] graph) {
+
+    }
 
     public static void main(String[] args) {
-
+        int v = 6; // No of vertices
+        ArrayList<Edge>[] graph = new ArrayList[v];
+        for (int i = 0; i < graph.length; i++) {
+            createGraph(graph);
+        }
     }
 }

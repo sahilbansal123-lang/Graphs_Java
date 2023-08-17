@@ -46,13 +46,6 @@
       <option name="presentableId" value="Default" />
       <updated>1691427434446</updated>
     </task>
-    <task id="LOCAL-00023" summary="graph">
-      <created>1691651305068</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1691651305068</updated>
-    </task>
     <task id="LOCAL-00024" summary="graph">
       <created>1691651583484</created>
       <option name="number" value="00024" />
@@ -389,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692169667922</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="graph">
+      <created>1692169772843</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1692169772843</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
