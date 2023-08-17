@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.PriorityQueue;
-import java.util.concurrent.ConcurrentMap;
 
 public class DijktrawsAlgorithm {
 
@@ -51,7 +50,7 @@ public class DijktrawsAlgorithm {
     }
 
     public static void shortestPath(ArrayList<Edge>[] graph, int src) {
-        int dist[] = new int[graph.length];
+        int[] dist = new int[graph.length];
 
         // Initialization of dist with infinity
         for (int i = 0; i < graph.length; i++) {
@@ -60,7 +59,7 @@ public class DijktrawsAlgorithm {
             }
         }
 
-        boolean isVis[] = new boolean[graph.length];
+        boolean[] isVis = new boolean[graph.length];
         PriorityQueue<Pair> pq = new PriorityQueue<>();
         //Adding src with dist 0 in the queue
         pq.add(new Pair(src, 0));
@@ -83,8 +82,8 @@ public class DijktrawsAlgorithm {
                 }
             }
         }
-        for (int i = 0; i < dist.length; i++) {
-            System.out.print(dist[i] + " ");
+        for (int j : dist) {
+            System.out.print(j + " ");
         }
         System.out.println();
     }
