@@ -5,9 +5,11 @@ public class DijktrawsAlgorithm {
     public static class Edge {
         int src;
         int dest;
-        public Edge(int s, int d) {
+        int weight;
+        public Edge(int s, int d, int w) {
             this.src = s;
             this.dest = d;
+            this.weight = w;
         }
     }
 
@@ -16,12 +18,18 @@ public class DijktrawsAlgorithm {
             graph[i] = new ArrayList<>();
         }
 
-        graph[3].add(new Edge(3, 1));
-        graph[2].add(new Edge(2, 3));
-        graph[4].add(new Edge(4, 0));
-        graph[4].add(new Edge(4, 1));
-        graph[5].add(new Edge(5, 0));
-        graph[5].add(new Edge(5, 2));
+        graph[0].add(new Edge(0, 1, 2));
+        graph[0].add(new Edge(0, 2, 4));
+
+        graph[1].add(new Edge(1, 2, 1));
+        graph[1].add(new Edge(1, 3, 7));
+
+        graph[2].add(new Edge(2, 4, 3));
+
+        graph[3].add(new Edge(3, 5, 1));
+
+        graph[4].add(new Edge(4, 5, 5));
+        graph[4].add(new Edge(4, 3, 2));
 
     }
 
