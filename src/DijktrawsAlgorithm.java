@@ -33,4 +33,16 @@ public class DijktrawsAlgorithm {
 
     }
 
+    public static void shortestPath(ArrayList<Edge>[] graph, int src, int dest, String path) {
+
+    }
+
+    public static void main(String[] args) {
+        int v = 6; // No of vertices
+        ArrayList<Edge>[] graph = new ArrayList[v];
+        for (int i = 0; i < graph.length; i++) {
+            createGraph(graph);
+        }
+    }
+
 }
