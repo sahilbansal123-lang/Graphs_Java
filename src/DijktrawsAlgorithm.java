@@ -76,7 +76,7 @@ public class DijktrawsAlgorithm {
                     int u = e.src;
                     int v = e.dest;
                     int wt = e.weight;
-                    if (dist[u] + wt < dist[v]) {
+                    if (dist[u] + wt < dist[v]) { // Update dist for src to v
                         dist[v] = dist[u] + wt;
                         pq.add(new Pair(v, dist[v]));
                     }
