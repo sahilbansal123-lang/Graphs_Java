@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2a08c885-2627-4c06-9239-53defff80a27" name="Changes" comment="graph">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShortestDistCalculation/BellmenFordAlgo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortestDistCalculation/BellmenFordAlgo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,41 +46,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1691427434446</updated>
-    </task>
-    <task id="LOCAL-00038" summary="graph">
-      <created>1691819940840</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1691819940840</updated>
-    </task>
-    <task id="LOCAL-00039" summary="graph">
-      <created>1691820635740</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1691820635740</updated>
-    </task>
-    <task id="LOCAL-00040" summary="graph">
-      <created>1691991057193</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1691991057193</updated>
-    </task>
-    <task id="LOCAL-00041" summary="graph">
-      <created>1691991092425</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1691991092425</updated>
-    </task>
-    <task id="LOCAL-00042" summary="graph">
-      <created>1691991103804</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1691991103804</updated>
     </task>
     <task id="LOCAL-00043" summary="graph">
       <created>1691993249764</created>
@@ -389,7 +355,42 @@
       <option name="project" value="LOCAL" />
       <updated>1692256991549</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="graph">
+      <created>1692335241624</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1692335241624</updated>
+    </task>
+    <task id="LOCAL-00088" summary="graph">
+      <created>1692335306044</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1692335306044</updated>
+    </task>
+    <task id="LOCAL-00089" summary="graph">
+      <created>1692335364264</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1692335364264</updated>
+    </task>
+    <task id="LOCAL-00090" summary="graph">
+      <created>1692335507495</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1692335507495</updated>
+    </task>
+    <task id="LOCAL-00091" summary="graph">
+      <created>1692335644256</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1692335644256</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
