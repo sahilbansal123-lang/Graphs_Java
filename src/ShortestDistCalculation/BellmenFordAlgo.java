@@ -1,3 +1,5 @@
+package ShortestDistCalculation;
+
 import CycleDetection.CycleDetectionUndirectedBfs;
 
 import java.util.ArrayList;
@@ -32,6 +34,10 @@ public class BellmenFordAlgo {
         graph[3].add(new Edge(3, 4, 4));
 
         graph[4].add(new Edge(4, 1, -1));
+
+    }
+
+    public static void shortestDist(ArrayList<Edge>[] graph) {
 
     }
 
