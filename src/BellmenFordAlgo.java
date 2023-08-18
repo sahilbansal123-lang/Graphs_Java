@@ -37,4 +37,11 @@ public class BellmenFordAlgo {
 
     }
 
+    public static void main(String[] args) {
+        int v = 5;
+        ArrayList<Edge>[] graph = new ArrayList[v];
+        for (int i = 0; i < graph.length; i++) {
+            createGraph(graph);
+        }
+    }
 }
