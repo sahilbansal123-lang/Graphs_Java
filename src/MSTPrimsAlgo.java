@@ -51,17 +51,31 @@ public class MSTPrimsAlgo {
         }
     }
 
-    public static void mstPrim(ArrayList<Edge> []graph) {
+    public static int mstPrim(ArrayList<Edge> []graph) {
         boolean isVis[] = new boolean[graph.length];
         PriorityQueue<Pair> pq = new PriorityQueue<>();
 
+        pq.add(new Pair(0,0));
+        int finalCost = 0;
+        while (!pq.isEmpty()) {
+            Pair curr = pq.remove();
+            if (!isVis[curr.vertex]) {
+                isVis[curr.vertex] = true;
+                finalCost += curr.cost;
 
+                for (int i = 0; i < graph[curr.vertex].size(); i++) {
+                    Edge e = graph[curr.vertex].get(i);
+                    pq.add(new Pair(e.dest, e.weight));
+                }
+            }
+        }
+        return finalCost;
     }
 
     public static void main(String[] args) {
         int v = 4;
         ArrayList<Edge>[] graph = new ArrayList[v];
         createGraph(graph);
-
+        System.out.println(mstPrim(graph));
     }
 }

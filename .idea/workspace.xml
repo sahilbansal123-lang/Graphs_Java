@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a08c885-2627-4c06-9239-53defff80a27" name="Changes" comment="graph">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MSTPrimsAlgo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MSTPrimsAlgo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,13 +45,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1691427434446</updated>
-    </task>
-    <task id="LOCAL-00049" summary="graph">
-      <created>1692078549291</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1692078549291</updated>
     </task>
     <task id="LOCAL-00050" summary="graph">
       <created>1692078561177</created>
@@ -390,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692866275526</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="graph">
+      <created>1692867073214</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1692867073214</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
