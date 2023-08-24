@@ -1,4 +1,3 @@
-import ShortestDistCalculation.BellmenFordAlgo;
 
 import java.util.ArrayList;
 import java.util.PriorityQueue;
@@ -16,7 +15,7 @@ public class MSTPrimsAlgo {
         }
     }
 
-    public static void createGraph(ArrayList<Edge> graph[]) {
+    public static void createGraph(ArrayList<Edge>[] graph) {
         for (int i = 0; i < graph.length; i++) {
             graph[i] = new ArrayList<>();
         }
@@ -51,8 +50,8 @@ public class MSTPrimsAlgo {
         }
     }
 
-    public static int mstPrim(ArrayList<Edge> []graph) {
-        boolean isVis[] = new boolean[graph.length];
+    public static int mstPrimMinCost(ArrayList<Edge> []graph) {
+        boolean[] isVis = new boolean[graph.length];
         PriorityQueue<Pair> pq = new PriorityQueue<>();
 
         pq.add(new Pair(0,0));
@@ -72,10 +71,30 @@ public class MSTPrimsAlgo {
         return finalCost;
     }
 
+    public static void mstGraph(ArrayList<Edge> [] graph) {
+        boolean[] isVis = new boolean[graph.length];
+        PriorityQueue<Pair> pq = new PriorityQueue<>();
+
+        ArrayList<Integer> mst = new ArrayList<>();
+        pq.add(new Pair(0, 0));
+
+        while(!pq.isEmpty()) {
+            Pair curr = pq.remove();
+            if (!isVis[curr.vertex]) {
+                isVis[curr.vertex] = true;
+                mst.add(curr.vertex);
+                for (int i = 0; i < graph[curr.vertex].size(); i++) {
+                    Edge e = graph[curr.vertex].get(i);
+                    pq.add(new Pair(e.dest, e.weight));
+                }
+            }
+        }
+    }
+
     public static void main(String[] args) {
         int v = 4;
         ArrayList<Edge>[] graph = new ArrayList[v];
         createGraph(graph);
-        System.out.println(mstPrim(graph));
+        System.out.println(mstPrimMinCost(graph));
     }
 }
