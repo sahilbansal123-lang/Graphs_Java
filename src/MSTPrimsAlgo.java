@@ -3,8 +3,6 @@ import ShortestDistCalculation.BellmenFordAlgo;
 import java.util.ArrayList;
 
 public class MSTPrimsAlgo {
-
-
     public static class Edge{
         int src;
         int dest;
@@ -27,4 +25,9 @@ public class MSTPrimsAlgo {
 
 
 
+    public static void main(String[] args) {
+        int v = 5;
+        ArrayList<Edge> graph = new ArrayList<>();
+        createGraph(graph);
+    }
 }
