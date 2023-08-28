@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class cheapestFlights {
 
     public static class Edge{
@@ -26,6 +28,25 @@ public class cheapestFlights {
 
 
 
+
+    public static void createGraph(int flights[][], ArrayList<Edge> [] graph) {
+        for (int i = 0; i < graph.length; i++) {
+            graph[i] = new ArrayList<>();
+        }
+
+        for (int i = 0; i < flights.length; i++) {
+            int src = flights[i][0];
+            int dest = flights[i][1];
+            int wt = flights[i][2];
+
+            Edge e = new Edge(src, dest, wt);
+            graph[src].add(e);
+        }
+    }
+    
+    public static void main(String[] args) {
+        
+    }
 
 
 }
