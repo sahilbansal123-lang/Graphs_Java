@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a08c885-2627-4c06-9239-53defff80a27" name="Changes" comment="graph">
-      <change beforePath="$PROJECT_DIR$/src/CheapestFlights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CheapestFlights.java" afterDir="false" />
-    </list>
+    <list default="true" id="2a08c885-2627-4c06-9239-53defff80a27" name="Changes" comment="graph" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,13 +43,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1691427434446</updated>
-    </task>
-    <task id="LOCAL-00056" summary="graph">
-      <created>1692081704363</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1692081704363</updated>
     </task>
     <task id="LOCAL-00057" summary="graph">
       <created>1692082617183</created>
@@ -389,7 +380,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693204399515</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="graph">
+      <created>1693204539846</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1693204539846</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

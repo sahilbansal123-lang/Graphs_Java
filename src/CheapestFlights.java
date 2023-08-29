@@ -91,6 +91,4 @@ public class CheapestFlights {
         int k = 1;
         System.out.println(cheapestFlight(n,src, dest, k, flights));
     }
-
-
 }
