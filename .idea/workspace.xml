@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a08c885-2627-4c06-9239-53defff80a27" name="Changes" comment="graph">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ConnectingCitiesWithMinCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConnectingCitiesWithMinCost.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,13 +46,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1691427434446</updated>
-    </task>
-    <task id="LOCAL-00060" summary="graph">
-      <created>1692162241230</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1692162241230</updated>
     </task>
     <task id="LOCAL-00061" summary="graph">
       <created>1692162293958</created>
@@ -389,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693285900837</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="graph">
+      <created>1693286240519</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1693286240519</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
