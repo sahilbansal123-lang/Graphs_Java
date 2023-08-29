@@ -1,7 +1,22 @@
 public class ConnectingCitiesWithMinCost {
 
-    public static class Edge {}
+    public static class Edge implements Comparable<Edge>{
+        int dest;
+        int cost;
+        public Edge(int d, int c) {
+            this.dest = d;
+            this.cost = c;
+        }
+        @Override
+        public int compareTo(Edge e2) {
+            return this.cost - e2.cost;
+        }
+    }
 
+    public static void MinCost(int cities[][]) {
+        boolean isVis[] = new boolean[cities.length];
+
+    }
 
     public static void main(String[] args) {
         int cities[][] = {{0, 1, 2, 3, 4},
