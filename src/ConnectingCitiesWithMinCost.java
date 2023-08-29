@@ -1,4 +1,3 @@
-import java.util.LinkedList;
 import java.util.PriorityQueue;
 
 public class ConnectingCitiesWithMinCost {
@@ -16,8 +15,8 @@ public class ConnectingCitiesWithMinCost {
         }
     }
 
-    public static void MinCost(int cities[][]) {
-        boolean isVis[] = new boolean[cities.length];
+    public static void MinCost(int[][] cities) {
+        boolean[] isVis = new boolean[cities.length];
         PriorityQueue<Edge> pq = new PriorityQueue<>();
 
         int finalCost = 0;
@@ -40,7 +39,7 @@ public class ConnectingCitiesWithMinCost {
     }
 
     public static void main(String[] args) {
-        int cities[][] = {{0, 1, 2, 3, 4},
+        int[][] cities = {{0, 1, 2, 3, 4},
                           {1, 0, 5, 0, 7},
                           {2, 5, 0, 6, 0},
                           {3, 0, 6, 0, 0},
