@@ -38,7 +38,6 @@ public class KruskalAlgorithm {
         graph[3].add(new MSTPrimsAlgo.Edge(3, 2, 50));
         graph[3].add(new MSTPrimsAlgo.Edge(3, 1, 40));
 
-
     }
 
     public static void main(String[] args) {
