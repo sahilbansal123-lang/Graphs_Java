@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-
 public class KruskalAlgorithm {
 
     public static class Edge implements Comparable<Edge> {
@@ -19,28 +18,52 @@ public class KruskalAlgorithm {
         }
     }
 
-    public static void createGraph(ArrayList<MSTPrimsAlgo.Edge>[] graph) {
-        for (int i = 0; i < graph.length; i++) {
-            graph[i] = new ArrayList<>();
-        }
+    public static void createGraph(ArrayList<Edge> graph) {
 
-        graph[0].add(new MSTPrimsAlgo.Edge(0, 1, 10));
-        graph[0].add(new MSTPrimsAlgo.Edge(0, 2, 15));
-        graph[0].add(new MSTPrimsAlgo.Edge(0, 3, 30));
-
-        graph[1].add(new MSTPrimsAlgo.Edge(1, 3, 40));
-        graph[1].add(new MSTPrimsAlgo.Edge(1, 0, 10));
-
-        graph[2].add(new MSTPrimsAlgo.Edge(2, 3, 50));
-        graph[2].add(new MSTPrimsAlgo.Edge(2, 0, 15));
-
-        graph[3].add(new MSTPrimsAlgo.Edge(3, 0, 30));
-        graph[3].add(new MSTPrimsAlgo.Edge(3, 2, 50));
-        graph[3].add(new MSTPrimsAlgo.Edge(3, 1, 40));
+        graph.add(new Edge(0, 1, 10));
+        graph.add(new Edge(0, 2, 15));
+        graph.add(new Edge(0, 3, 30));
+        graph.add(new Edge(1, 3, 40));
+        graph.add(new Edge(2, 3, 50));
 
     }
 
-    public static void main(String[] args) {
+    static int n = 4;
+    static int par[] = new int[n];
+    static int rank[] = new int[n];
 
+    public static void init() {
+        for (int i = 0; i < n; i++) {
+            par[i] = i;
+        }
+    }
+
+    public static int find(int x) {
+        if (par[x] == x) {
+            return x;
+        }
+        return par[x] = find(par[x]);
+    }
+
+    public static void union(int a, int b) {
+        int parA = find(a);
+        int parB = find(b);
+
+        if (rank[parA] == rank[parB]) {
+            par[parB] = parA;
+            rank[parA]++;
+        } else if (rank[parA] > rank[parB]) {
+            par[parB] = parA;
+            rank[parA]++;
+        } else {
+            par[parA] = parB;
+            rank[parB]++;
+        }
+    }
+
+    public static void main(String[] args) {
+        int v = 4;
+        ArrayList<Edge> graph = new ArrayList<>();
+        createGraph(graph);
     }
 }
