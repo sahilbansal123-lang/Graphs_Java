@@ -1,4 +1,7 @@
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
 public class KruskalAlgorithm {
 
     public static class Edge implements Comparable<Edge> {
@@ -61,9 +64,30 @@ public class KruskalAlgorithm {
         }
     }
 
+    public static void kruskalFindMST(ArrayList<Edge> graph, int v){
+        init();
+        Collections.sort(graph);
+        int mstCost = 0;
+        int count = 0;
+
+        for (int i = 0; count < v-1; i++) {
+            Edge e = graph.get(i);
+            int parA = find(e.src);
+            int parB = find(e.dest);
+            if (parA != parB) {
+                union(e.src, e.dest);
+                mstCost += e.weight;
+                count++;
+            }
+        }
+        System.out.println(mstCost);
+    }
+
     public static void main(String[] args) {
         int v = 4;
         ArrayList<Edge> graph = new ArrayList<>();
         createGraph(graph);
+
+        kruskalFindMST(graph, v);
     }
 }
